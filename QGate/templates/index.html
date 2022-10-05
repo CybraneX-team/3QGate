@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3Q-Gate</title>
+
+
+</head>
+<body>
+    <div class="gates" id="gates">
+    <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+    <input type='number' name="th1" placeholder="th1"> 
+    <button type="submit">submit th1</button>
+    <input type='number' name="PI/b" placeholder="PI/b">
+    <button type="submit">submit pi/b</button><br><br>
+    <select name="11" id="11">
+        <option value="R">R</option>
+        <option value="H">H</option>
+        <option value="SX">SX</option>
+        <option value="Cxx">Cxx</option>
+        <option value="Cnot">Cnot</option>
+        <option value="Cxy">Cxy</option>
+        <option value="I">I</option>
+        </select>
+    <select name="12" id="12">
+        <option value="R">R</option>
+        <option value="H">H</option>
+        <option value="SX">SX</option>
+        <option value="Cxx">Cxx</option>
+        <option value="Cnot">Cnot</option>
+        <option value="Cxy">Cxy</option>
+        <option value="I">I</option>
+        </select>
+    <select name="13" id="13">
+        <option value="R">R</option>
+        <option value="H">H</option>
+        <option value="SX">SX</option>
+        <option value="Cxx">Cxx</option>
+        <option value="Cnot">Cnot</option>
+        <option value="Cxy">Cxy</option>
+        <option value="I">I</option>>
+        </select>
+        <br><br>
+    <select name="21" id="21">
+        <option value="R">R</option>
+        <option value="H">H</option>
+        <option value="SX">SX</option>
+        <option value="Cxx">Cxx</option>
+        <option value="Cnot">Cnot</option>
+        <option value="Cxy">Cxy</option>
+        <option value="I">I</option>
+        </select>
+    <select name="22" id="22">
+        <option value="R">R</option>
+        <option value="H">H</option>
+        <option value="SX">SX</option>
+        <option value="Cxx">Cxx</option>
+        <option value="Cnot">Cnot</option>
+        <option value="Cxy">Cxy</option>
+        <option value="I">I</option>
+        </select>
+    <select name="23" id="23">
+        <option value="R">R</option>
+        <option value="H">H</option>
+        <option value="SX">SX</option>
+        <option value="Cxx">Cxx</option>
+        <option value="Cnot">Cnot</option>
+        <option value="Cxy">Cxy</option>
+        <option value="I">I</option>
+        </select>
+        <br><br>
+    <select name="31" id="31">
+        <option value="R">R</option>
+        <option value="H">H</option>
+        <option value="SX">SX</option>
+        <option value="Cxx">Cxx</option>
+        <option value="Cnot">Cnot</option>
+        <option value="Cxy">Cxy</option>
+        <option value="I">I</option>
+        </select>
+    <select name="32" id="32">
+        <option value="R">R</option>
+        <option value="H">H</option>
+        <option value="SX">SX</option>
+        <option value="Cxx">Cxx</option>
+        <option value="Cnot">Cnot</option>
+        <option value="Cxy">Cxy</option>
+        <option value="I">I</option>
+        </select>
+
+
+    <select name="33" id="33">
+        <option value="R">R</option>
+        <option value="H">H</option>
+        <option value="SX">SX</option>
+        <option value="Cxx">Cxx</option>
+        <option value="Cnot">Cnot</option>
+        <option value="Cxy">Cxy</option>
+        <option value="I">I</option>
+        </select>
+
+        <button type="submit" name="submit gates">submit gates</button><br>
+    </form>
+</div> 
+    <h3>product {{product}}</h3>
+</body>
+</html>
