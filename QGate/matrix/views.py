@@ -37,15 +37,13 @@ def cxy(pi):
     return Cxy
 
 def index(request):
-    product=False
+    product=''
     if request.method == 'POST':
         a=request.POST.get('21')
         data=request.POST.dict()
         print(data)
         inputs= getlist(data)
         print('inputs',inputs)
-        # print('R(thi)',R(thi))
-        # print('cxy(pi)',cxy(pi))
         product=Quantum_Operator(inputs)
         print(product,product.shape)
     return render(request,'index (1).html',{'product':product})
@@ -53,17 +51,6 @@ def index(request):
 def getlist(data):
     l1=list(data.values())
     input_list=l1
-    # index=2
-    # for i,j in enumerate(input_list):
-    #     if j=='R':
-    #         j=j+'('+theta+')'
-    #         input_list[i]=j
-    #     if j=='Cxy':
-    #         j=j+'('+pi+')'
-    #         input_list[i]=j
-    # index=index+1
-    # thi=input_list[0]
-    # pi=input_list[1]
     inputs=input_list[:-1]
     return inputs
 
@@ -113,25 +100,6 @@ def Quantum_Operator(inputs):
     
         input_list=inputs
 
-        # index=0
-
-        # for i in input_list:
-    
-        #     if i=='R':
-       
-        #         i=i+'('+theta+')'
-        #         input_list[index]=i
-    
-        #     if i=='Cxy':
-       
-        #         i=i+'('+pi+')'
-        #         input_list[index]=i
-        
-        #     index=index+1
-        
-        inputs=input_list
-       
-        
         multK=[]
         K_list=[]
         num=0
