@@ -1,0 +1,1 @@
+web: waitress-serve --port=$PORT 3Q-Gate.wsgi:application
