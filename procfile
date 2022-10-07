@@ -1,1 +1,1 @@
-web: gunicorn QGate.wsgi:application --log-file -
+web: waitress-serve --port=$PORT QGate.wsgi:application
