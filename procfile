@@ -1,1 +1,1 @@
-web: gunicorn QGate.wsgi --log-file -
+web: gunicorn QGate.wsgi:application --log-file -
