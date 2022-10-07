@@ -2,7 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/QGate" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/QGate/3QGate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/3Q-Gate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/3Q-Gate/33Q-Gate" vcs="Git" />
   </component>
 </project>
